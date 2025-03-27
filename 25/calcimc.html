@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Calculadora de IMC</title>
+    <style>
+      body{
+        background: rgb(191,238,174);
+        background: radial-gradient(circle, rgba(191,238,174,1) 0%, rgba(148,187,233,1) 100%);
+        font-family: "Poppins", serif;
+      }
+      #cabecalho {
+       
+        align-items: center;
+        color: rgb(255, 255, 255);
+        background: rgb(9,121,67);
+        background: rgb(9,121,67);
+        background: linear-gradient(90deg, rgba(9,121,67,1) 35%, rgba(55,69,71,1) 100%);
+        
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+     
+
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .borda {
+        text-align: center;
+        border: 10px;
+        margin-top: 170px;
+      }
+      .peso1 {
+        margin-left: 200px;
+        color: rgb(255, 255, 255);
+      }
+      .altura1 {
+        color: rgb(255, 255, 255);
+
+        margin-left: 350px;
+      }
+      #informacoes {
+        margin-top: 1100px;
+     
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 10px;
+        border: s5px solid rgb(206, 206, 206);
+      
+        background: rgb(9,121,67);
+        background: linear-gradient(90deg, rgba(9,121,67,1) 35%, rgba(55,69,71,1) 100%);
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        height: 90px;
+      }
+      #resultado1 {
+        margin-top: 20px;
+        color: rgb(32, 32, 32);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #botao input {
+        padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00FF08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+      #botao :hover{
+        box-shadow: 0px 0px 8px #00FF0868;
+      }
+      .nome{
+        color: aliceblue;
+        margin-left: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .peso11{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+
+      }
+      .altura11{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="borda">
+      <div id="cabecalho"><h3>Calculadora de IMC</h3></div>
+      <div id="informacoes">
+        <div class="nome">
+        <label for="nome" class="nome"></label>
+          Digite seu nome:
+
+          <input type="text" id="nome" name="nome" />
+        </label>
+      </div>
+      <div class="peso11">
+        <label for="peso" class="peso1">
+          Insira seu peso:
+
+          <input type="number" id="peso" name="peso" />
+        </label>
+      </div>
+        <br />
+        <div class="altura11">
+        <label for="altura" class="altura1">
+          Insira sua altura:
+          <input type="number" id="altura" name="altura" />
+        </label>
+      </div>
+      </div>
+
+      <div id="resultado1">
+        <div id="botao">
+          <input type="button" id="calc" value="Calcular" />
+        </div>
+        <br />
+        
+
+        <div id="resultado1"><p id="resultado"></p></div>
+        
+      </div>
+
+    </div>
+
+    <script src="exemp.js"></script>
+
+  </body>
+</html>

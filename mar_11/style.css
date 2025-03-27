@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+
+  --cor-primaria: rgb(41, 87, 128);
+  --cor-secundaria: aliceblue;
+  --cor-Terciária: gainsboro;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+}
+
+main {
+  background-color: var(--cor-Terciária);
+  margin-top: -20px;
+  padding: 10px;
+}
+
+summary {
+  color: var(--cor-primaria);
+
+  margin-top: 10px;
+  padding: 20px;
+  font-size: 25px;
+}
+
+details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+#sub {
+  display: flex;
+  justify-content: center;
+  color: var(--cor-primaria);
+}
+#inf {
+  display: flex;
+  margin-left: 30px;
+}
+.r9 {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+}
+.maradona {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+}
+.pele {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+}
+
+.d10 {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+}
+.cr7 {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+}
+.des10 {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+}
+.des {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+}
