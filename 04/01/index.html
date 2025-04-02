@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro Alunos</title>
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h2>Cadastro Aluno</h2>
     </header>
-     
-   
+    <section>
+        <br>
     <form
         action="https://webhook.site/0cc63d27-891f-4ac3-a41b-8a992ba88721" 
         method="post" 
@@ -29,9 +30,18 @@
             required> 
     </label>
     <br><br>
+
+    <label for="id_color">Sua cor favorita:
+        <input type="color">
+
+
+    </label>
+    
+    <br><br>
     
     <label for="id_email">Email:
         <input type="email"
+            name="email"
             id="id_email"
             minlength="5"
             maxlength="100"
@@ -42,6 +52,7 @@
 
     <label for="id_senha">Senha:
         <input type="password"
+            name="senha"
             id="id_senha"
             minlength="5"
             maxlength="6"
@@ -50,7 +61,8 @@
     </label>
     <br><br>
     <label for="id_telefone">Telefone:
-        <input type="number"
+        <input type="tel"
+        name="telefone"
             id="id_telefone"
             minlength="5"
             maxlength="10"
@@ -60,6 +72,7 @@
     <br><br>
     <label for="id_data">Data de Nascimento:
         <input type="date"
+            name="data"
             id="id_nome"
             minlength="5"
             maxlength="200"
@@ -69,6 +82,7 @@
     <br><br>
     <label for="id_site">Site:
         <input type="url"
+            name="site"
             id="id_nome"
             minlength="5"
             maxlength="200"
@@ -79,6 +93,7 @@
 
     <label for="id_foto">Foto:
         <input type="file"
+            name="foto"
             id="id_foto"
             minlength="5"
             maxlength="500"
@@ -87,11 +102,11 @@
     <br><br>
 
     <label for="id_bio">Biografia:
-        <textarea name="" id="id_bio" rows="6" cols="30"></textarea>
+        <textarea name="bio" id="id_bio" rows="6" cols="30"></textarea>
 
     </label>
     <br><br>
-    <fieldset>
+    <fieldset >
         <legend>Níveis de conhecimento</legend>
         HTML:
         <input type="range"
@@ -113,6 +128,10 @@
 
     </fieldset>
 
+    <br>
+    <input id="id_enviar" type="submit" value="Enviar">
+    <input id="id_red"  type="reset" value="Redefinir">
+</section>
 
 
     
