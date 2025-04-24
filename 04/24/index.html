@@ -40,7 +40,7 @@
       <fieldset>
         <legend>Radio Buttons</legend>
         <label for="id_ceara">
-          <input type="radio" name="time" id="id_ceara" value="ceara" />Ceará
+          <input type="radio" name="time" id="id_ceara" value="Ceará" />Ceará
         </label>
 
         <label for="id_horizonte">
@@ -48,7 +48,7 @@
             type="radio"
             name="time"
             id="id_horizonte"
-            value="horizonte"
+            value="Horizonte"
           />Horizonte
         </label>
 
@@ -57,7 +57,7 @@
             type="radio"
             name="time"
             id="id_ferroviario"
-            value="ferroviario"
+            value="Ferroviario"
           />Ferroviário
         </label>
       </fieldset>
@@ -68,20 +68,63 @@
       </div>
     </form>
 
+    <div id="bloco">Vazia</div>
+
+    <style>
+      #bloco {
+        display: flex;
+        flex-direction: row;
+        width: 1000px;
+        height: 1000px;
+        justify-content: center;
+        align-items: center;
+        background-color: gray;
+        margin: 100px;
+      }
+    </style>
     <script>
+      let bloco = document.querySelector("#bloco");
+      bloco.addEventListener("mouseover", (e) => {
+        e.preventDefault();
+        bloco.innerHTML = "Entrou";
+        bloco.style.backgroundColor = "green";
+      });
+
+      bloco.addEventListener("mouseout", (e) => {
+        e.preventDefault();
+        bloco.innerHTML = "Saiu";
+        bloco.style.backgroundColor = "black";
+        bloco.style.color = "white";
+      });
+
+      bloco.addEventListener("dblclick", (e) => {
+        e.preventDefault();
+        bloco.innerHTML = "Clique duplo";
+        bloco.style.backgroundColor = "red";
+        bloco.style.color = "white;";
+      });
+
       let formulario = document.querySelector("#formulario");
       formulario.addEventListener("submit", (evento) => {
         evento.preventDefault();
 
-        let checkboxes = documento.querySelectorAll(
+        let checkboxes = document.querySelectorAll(
           "input[name='tecnologias']:checked"
         );
 
         let selecao = "Checkboxes selecionados:";
 
-        for (let i = 0; i < checkboxes.length; i++) {
-          selecao += "\n" + checkboxes[1].value;
+        /*for (let i = 0; i < checkboxes.length; i++) {
+          selecao += "\n" + checkboxes[i].value;
+        }*/
+
+        for (let checkbox of checkboxes) {
+          selecao += "\n" + checkbox.value;
         }
+
+        let radio = document.querySelector('input[name="time"]:checked');
+        selecao += "\n Meu radio button selecionado: " + radio.value;
+
         alert(selecao);
       });
     </script>
