@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkboxes, Radiobutons e events</title>
+  </head>
+  <body>
+    <form id="formulario">
+      <fieldset>
+        <legend>Checkboxes</legend>
+
+        <label for="id_java">
+          <input
+            type="checkbox"
+            name="tecnologias"
+            id="id_java"
+            value="java"
+          />Java </label
+        ><br />
+
+        <label for="id_js">
+          <input
+            type="checkbox"
+            name="tecnologias"
+            id="id_js"
+            value="js"
+          />JS </label
+        ><br />
+
+        <label for="id_python">
+          <input
+            type="checkbox"
+            name="tecnologias"
+            id="id_python"
+            value="python"
+          />Python </label
+        ><br />
+      </fieldset>
+      <fieldset>
+        <legend>Radio Buttons</legend>
+        <label for="id_ceara">
+          <input type="radio" name="time" id="id_ceara" value="ceara" />Ceará
+        </label>
+
+        <label for="id_horizonte">
+          <input
+            type="radio"
+            name="time"
+            id="id_horizonte"
+            value="horizonte"
+          />Horizonte
+        </label>
+
+        <label for="id_ferroviario">
+          <input
+            type="radio"
+            name="time"
+            id="id_ferroviario"
+            value="ferroviario"
+          />Ferroviário
+        </label>
+      </fieldset>
+
+      <div class="botoes">
+        <button type="submit">Enviar</button>
+        <button type="reset">Resetar</button>
+      </div>
+    </form>
+
+    <script>
+      let formulario = document.querySelector("#formulario");
+      formulario.addEventListener("submit", (evento) => {
+        evento.preventDefault();
+
+        let checkboxes = documento.querySelectorAll(
+          'input [name="tecnologias"]:checked'
+        );
+
+        for (let i = 0; i < checkboxes.lenght; i++) {}
+      });
+    </script>
+  </body>
+</html>
