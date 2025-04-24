@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Alunos</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>Cadastro Aluno</h2>
+    </header>
+    <section>
+        <br>
+    <form
+        action="https://webhook.site/0cc63d27-891f-4ac3-a41b-8a992ba88721" 
+        method="post" 
+        enctype="multipart/form-data"
+        >
+
+
+    <label for="id_nome">Nome completo:
+        <input
+            type="text"
+            name="nome"
+            id="id_nome"
+            minlength="5"
+            maxlength="200"
+            placeholder="Informe seu nome completo"
+            required> 
+    </label>
+    <br><br>
+
+    <label for="id_color">Sua cor favorita:
+        <input type="color">
+
+
+    </label>
+    
+    <br><br>
+    
+    <label for="id_email">Email:
+        <input type="email"
+            name="email"
+            id="id_email"
+            minlength="5"
+            maxlength="100"
+            placeholder="Informe seu email"
+            required>
+    </label>
+    <br><br>
+
+    <label for="id_senha">Senha:
+        <input type="password"
+            name="senha"
+            id="id_senha"
+            minlength="5"
+            maxlength="6"
+            placeholder="Informe sua senha"
+            required>
+    </label>
+    <br><br>
+    <label for="id_telefone">Telefone:
+        <input type="tel"
+        name="telefone"
+            id="id_telefone"
+            minlength="5"
+            maxlength="10"
+            placeholder="Informe seu Telefone"
+            required>
+    </label>
+    <br><br>
+    <label for="id_data">Data de Nascimento:
+        <input type="date"
+            name="data"
+            id="id_nome"
+            minlength="5"
+            maxlength="200"
+            
+            required>
+    </label>
+    <br><br>
+    <label for="id_site">Site:
+        <input type="url"
+            name="site"
+            id="id_nome"
+            minlength="5"
+            maxlength="200"
+            placeholder="Informe seu site"
+            required>
+    </label>
+    <br><br>
+
+    <label for="id_foto">Foto:
+        <input type="file"
+            name="foto"
+            id="id_foto"
+            minlength="5"
+            maxlength="500"
+            required>
+    </label>
+    <br><br>
+
+    <label for="id_bio">Biografia:
+        <textarea name="bio" id="id_bio" rows="6" cols="30"></textarea>
+
+    </label>
+    <br><br>
+    <fieldset >
+        <legend>Níveis de conhecimento</legend>
+        HTML:
+        <input type="range"
+        max="10"
+        min="0"
+        value="5">
+        CSS:
+        
+        <input type="range"
+        max="10"
+        min="0"
+        value="5">
+
+        JS:
+         <input type="range"
+         max="10"
+        min="0"
+        value="5">
+
+    </fieldset>
+
+    <br>
+    <input id="id_enviar" type="submit" value="Enviar">
+    <input id="id_red"  type="reset" value="Redefinir">
+</section>
+
+
+    
+</body>
+</html>

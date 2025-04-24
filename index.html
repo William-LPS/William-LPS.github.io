@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apontador</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+   
+    <style>
+      * {
+  box-sizing: border-box;
+
+  --cor-primaria: rgb(41, 87, 128);
+  --cor-secundaria: aliceblue;
+  --cor-Terciária: gainsboro;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+}
+
+main {
+  background-color: var(--cor-Terciária);
+  margin-top: -20px;
+  padding: 10px;
+}
+
+summary {
+  color: var(--cor-primaria);
+
+  margin-top: 10px;
+  padding: 20px;
+  font-size: 25px;
+}
+
+details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+#sub {
+  display: flex;
+  justify-content: center;
+  color: var(--cor-primaria);
+}
+#inf {
+  display: flex;
+  margin-left: 30px;
+}
+.r9 {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+}
+.maradona {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+}
+.pele {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+}
+
+.d10 {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+}
+.cr7 {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+}
+.des10 {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+}
+.des {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Apontador</h1>
+    </header>
+
+    <header>
+      <h3>Atividades William e Pedro G.<i class="fa fa-home"></i></h3>
+    </header>
+    <main>
+      <h2 id="sub">Materiais e Atividades.<i class="fa fa-book"></i></h2>
+      <h4 id="sub">Confira abaixo os materiais e atividade disponiveis para cada dia de aula.</h4>
+      <section>
+        <details>
+          <summary class="mes">Fevereiro</summary>
+
+          <details>
+            <summary>Dia 11</summary>
+            <div class="r9">
+            <p id="inf">Impressão de informações básicas</p>
+            <a id="inf" href="../11/atividade.js" target="_blank">Material</a>
+          </div>
+          </details>
+
+          <details>
+            <summary>Dia 12</summary>
+            <div class="maradona">
+            <p id="inf">Funções</p>
+            <a id="inf" href="/desenvolvimento-web/exemplos/atividade01.js" target="_blank">Material</a>
+          </div>
+          </details>
+
+          <details>
+            <summary>Dia 18</summary>
+            <div class="pele">
+            <p id="inf">Autoescola - Página de Inscrição</p>
+            <a id="inf" href="../18/autoescola.html" target="_blank">Material</a>
+          </div>
+          </details>
+
+          <details>
+            <summary>Dia 24</summary>
+            <div class="d10">
+            <p id="inf"> Atividades Jogadores</p>
+            <a id="inf" href="/desenvolvimento-web/24/index.html" target="_blank">Material</a>
+          </div>
+          </details>
+
+          <details>
+            <summary>Dia 25</summary>
+            <div class="cr7">
+            <p id="inf">Calculo IMC</p>
+            <a id="inf" href="/desenvolvimento-web/25/calcimc.html" target="_blank">Material</a>
+          </div>
+          </details>
+
+          <details>
+            <summary>Dia 26 e 27</summary>
+            <div class="des10">
+            <p id="inf">Exemp Ternário</p>
+            <a id="inf" href="/desenvolvimento-web/exemplos/ter.js" target="_blank">Material</a>
+          </div>
+          </details>
+        </details>
+      </details>
+
+        <details>
+          <summary>Março</summary>
+          <details>
+            <summary>Dia 11</summary>
+            <div class="des">
+              <p id="inf">Apontador | Organização de Materiais e Atividades</p>
+              <a id="inf" href="/desenvolvimento-web/mar_11/exe.html" target="_blank">Material</a>
+            </div>
+          </details>
+        </details>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autoescola</title>
+    <style>
+      body {
+        align-items: center;
+      }
+      #auto {
+        display: flexbox;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(33, 199, 102);
+        height: 40px;
+        color: antiquewhite;
+        margin: none;
+        padding: none;
+        text-align: center;
+        padding: 10px;
+        width: 600px;
+        margin-left: 450px;
+        margin-top: 250px;
+      }
+      #escola {
+        padding: 10px;
+        background-color: antiquewhite;
+        height: 100px;
+        width: 600px;
+        margin-left: 450px;
+
+        text-align: center;
+      }
+      #message {
+        background-color: rgb(9, 194, 86);
+        color: aliceblue;
+        border-radius: 40px;
+        height: 40px;
+        width: 200px;
+        text-align: center;
+        padding: 10px;
+        font-size: 16px;
+        text-align: center;
+        margin-left: 650px;
+      }
+      #renovacao {
+        background-color: rgb(207, 24, 24);
+        height: 300px;
+        border-radius: 40px;
+        height: 40px;
+        width: 200px;
+        text-align: center;
+        margin-top: 30px;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="all">
+      <div id="auto">
+        <h3>Autoescola - Inscrição</h3>
+      </div>
+      <div id="escola">
+        <p>Informe sua idade abaixo para verficarmos sua elegibilidade</p>
+
+        <label for="idade"
+          >Idade:
+          <input type="number" id="idade" />
+        </label>
+
+        <input type="button" value="Verificar" onclick="verificar()" />
+      </div>
+
+      <div id="message">
+        <p id="resultado"></p>
+        <p id="renovacao"></p>
+      </div>
+    </div>
+    <script src="autoesccola.js"></script>
+  </body>
+</html>
