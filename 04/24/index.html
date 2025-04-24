@@ -74,10 +74,15 @@
         evento.preventDefault();
 
         let checkboxes = documento.querySelectorAll(
-          'input [name="tecnologias"]:checked'
+          "input[name='tecnologias']:checked"
         );
 
-        for (let i = 0; i < checkboxes.lenght; i++) {}
+        let selecao = "Checkboxes selecionados:";
+
+        for (let i = 0; i < checkboxes.length; i++) {
+          selecao += "\n" + checkboxes[1].value;
+        }
+        alert(selecao);
       });
     </script>
   </body>
