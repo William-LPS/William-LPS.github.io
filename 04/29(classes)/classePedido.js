@@ -5,15 +5,13 @@ export default class Pedido {
     this.tamanho = tamanho;
     this.massa = massa;
     this.endereco = endereco;
-
-    Pedido.numeroDoPedido++;
   }
 
-  get Nome() {
+  getNome() {
     return this.nome;
   }
 
-  get Endereco() {
+  getEndereco() {
     return this.endereco;
   }
 
